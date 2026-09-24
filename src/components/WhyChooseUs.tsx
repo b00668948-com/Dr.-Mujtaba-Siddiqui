@@ -67,34 +67,6 @@ export const WhyChooseUs: React.FC = () => {
           ))}
         </div>
 
-        {/* Bottom Banner with Working Hours & Location Trust Indicator */}
-        <div className="mt-12 rounded-2xl bg-gradient-to-r from-teal-50 to-blue-50 border border-teal-200/70 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-1">
-            <span className="text-xs font-bold text-teal-800 uppercase tracking-wider">
-              Convenient Evening Availability
-            </span>
-            <h4 className="text-lg sm:text-xl font-bold text-slate-900 font-heading">
-              Opens Daily at 7:00 PM for After-Office & School Care
-            </h4>
-            <p className="text-sm text-slate-600 max-w-xl">
-              No need to take time off work or pull kids out of classes. Get diagnosed comfortably during our regular evening clinic hours.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-4 shrink-0">
-            <div className="text-right hidden sm:block">
-              <span className="text-xs text-slate-500 block">Location</span>
-              <span className="text-sm font-bold text-slate-900">Puppalguda, Manikonda</span>
-            </div>
-            <a
-              href={`tel:${CLINIC_INFO.rawPhone}`}
-              className="px-5 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs sm:text-sm shadow-sm transition-all whitespace-nowrap"
-            >
-              Call {CLINIC_INFO.phone}
-            </a>
-          </div>
-        </div>
-
       </div>
     </section>
   );

@@ -142,24 +142,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           ))}
         </div>
 
-        {/* Bottom prompt */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-teal-900 to-blue-950 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
-          <div>
-            <h4 className="text-lg font-bold font-heading text-white">Unsure which service you need?</h4>
-            <p className="text-sm text-teal-100 mt-1">
-              Speak directly with our clinic coordinator or consult Dr. Mujtaba Siddiqui for guidance.
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => onSelectService('general-consultation')}
-              className="px-5 py-2.5 rounded-lg bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs whitespace-nowrap cursor-pointer transition-colors"
-            >
-              Book General Consultation
-            </button>
-          </div>
-        </div>
-
       </div>
     </section>
   );

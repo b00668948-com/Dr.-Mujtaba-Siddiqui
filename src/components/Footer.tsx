@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, MapPin, Clock, Star, ShieldCheck, Heart } from 'lucide-react';
 import { CLINIC_INFO } from '../constants';
+import { WhatsAppLogo } from './WhatsAppLogo';
 
 export const Footer: React.FC = () => {
   return (
@@ -11,9 +12,12 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand & Doctor Summary */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-xl bg-teal-500 flex items-center justify-center text-slate-950 font-black font-heading">
-                M+
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center text-white shadow-sm relative overflow-hidden">
+                <span className="text-lg font-black font-heading leading-none">M</span>
+                <span className="absolute top-0.5 right-0.5 w-2 h-2 bg-white text-teal-700 rounded-full flex items-center justify-center text-[8px] font-black leading-none">
+                  +
+                </span>
               </div>
               <span className="text-xl font-bold text-white font-heading tracking-tight">
                 Medicare<span className="text-teal-400">+</span> Clinic
@@ -44,7 +48,6 @@ export const Footer: React.FC = () => {
               <li><a href="#services" className="hover:text-teal-400 transition-colors">Clinical Services</a></li>
               <li><a href="#why-us" className="hover:text-teal-400 transition-colors">Why Choose Us</a></li>
               <li><a href="#reviews" className="hover:text-teal-400 transition-colors">Patient Testimonials</a></li>
-              <li><a href="#blog" className="hover:text-teal-400 transition-colors">Health Blog & Tips</a></li>
               <li><a href="#faq" className="hover:text-teal-400 transition-colors">Frequently Asked</a></li>
               <li><a href="#contact" className="hover:text-teal-400 transition-colors">Location & Contact</a></li>
             </ul>

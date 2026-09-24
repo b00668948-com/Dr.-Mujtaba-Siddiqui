@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Calendar, Clock, User, Phone, CheckCircle2, MessageSquare, AlertCircle, Sparkles } from 'lucide-react';
 import { SERVICES, TIME_SLOTS, CLINIC_INFO } from '../constants';
 import { AppointmentFormData } from '../types';
+import { WhatsAppLogo } from './WhatsAppLogo';
 
 interface AppointmentModalProps {
   isOpen: boolean;
@@ -150,9 +151,9 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                 href={getWhatsAppMessage()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2"
               >
-                <MessageSquare className="w-4 h-4" />
+                <WhatsAppLogo className="w-4 h-4 fill-white" />
                 <span>Confirm on WhatsApp with Clinic</span>
               </a>
 

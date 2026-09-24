@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MessageSquare, Phone, X, Calendar } from 'lucide-react';
 import { CLINIC_INFO } from '../constants';
+import { WhatsAppLogo } from './WhatsAppLogo';
 
 interface FloatingActionsProps {
   onOpenBooking: () => void;
@@ -35,10 +36,10 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({ onOpenBooking 
           href={CLINIC_INFO.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl shadow-emerald-500/30 transition-transform hover:scale-110 active:scale-95 group"
+          className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-xl shadow-emerald-500/30 transition-transform hover:scale-110 active:scale-95 group"
           aria-label="Chat with Medicare+ Clinic on WhatsApp"
         >
-          <MessageSquare className="w-7 h-7 fill-white" />
+          <WhatsAppLogo className="w-7 h-7 fill-white" />
         </a>
       </div>
 

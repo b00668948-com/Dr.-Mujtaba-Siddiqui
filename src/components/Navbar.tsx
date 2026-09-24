@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Calendar, Menu, X, Clock, MapPin } from 'lucide-react';
 import { CLINIC_INFO } from '../constants';
+import { WhatsAppLogo } from './WhatsAppLogo';
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -79,9 +80,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Zone 1: Single element brand wordmark */}
-          <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center text-white shadow-sm shadow-teal-500/20 group-hover:scale-105 transition-transform">
-              <span className="text-xl font-black font-heading leading-none">M+</span>
+          <a href="#home" className="flex items-center gap-2.5 group">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center text-white shadow-sm shadow-teal-500/20 group-hover:scale-105 transition-transform relative overflow-hidden">
+              <span className="text-xl font-black font-heading leading-none tracking-tighter">M</span>
+              <span className="absolute top-1 right-1 w-2.5 h-2.5 bg-white text-teal-700 rounded-full flex items-center justify-center text-[9px] font-black leading-none shadow-xs">
+                +
+              </span>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-slate-900 font-heading">
@@ -108,30 +112,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
 
           {/* Zone 3: 1-2 primary actions */}
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href={`tel:${CLINIC_INFO.rawPhone}`}
-              className="hidden md:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap"
-            >
-              <Phone className="w-3.5 h-3.5 text-teal-600" />
-              Call Doctor
-            </a>
-            <button
-              onClick={onOpenBooking}
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-500 hover:to-blue-500 rounded-lg shadow-sm shadow-teal-600/25 hover:shadow-md transition-all whitespace-nowrap cursor-pointer active:scale-95"
-            >
-              <Calendar className="w-4 h-4" />
-              Book Appointment
-            </button>
           </div>
 
           {/* Mobile hamburger button */}
           <div className="flex lg:hidden items-center gap-2">
-            <button
-              onClick={onOpenBooking}
-              className="sm:hidden px-3 py-1.5 text-xs font-semibold text-white bg-teal-600 rounded-md"
-            >
-              Book
-            </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"

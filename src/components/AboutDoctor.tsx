@@ -100,15 +100,6 @@ export const AboutDoctor: React.FC<AboutDoctorProps> = ({ onOpenBooking }) => {
                 </div>
               </div>
             </div>
-
-            {/* Bottom Book Button */}
-            <button
-              onClick={onOpenBooking}
-              className="w-full py-3.5 px-4 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
-            >
-              <Calendar className="w-4 h-4" />
-              Schedule Visit with Dr. Siddiqui
-            </button>
           </motion.div>
 
           {/* Right Column: Clinic Philosophy & Modern Facility */}

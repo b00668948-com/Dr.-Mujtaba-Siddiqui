@@ -5,7 +5,6 @@ import { AboutDoctor } from './components/AboutDoctor';
 import { ServicesSection } from './components/ServicesSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { ReviewsSection } from './components/ReviewsSection';
-import { BlogSection } from './components/BlogSection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -47,9 +46,6 @@ export default function App() {
 
         {/* Patient Reviews & 4.9★ Rating Display */}
         <ReviewsSection />
-
-        {/* Health Blog & Tips Section */}
-        <BlogSection onOpenBooking={() => handleOpenBooking()} />
 
         {/* Frequently Asked Questions */}
         <FaqSection onOpenBooking={() => handleOpenBooking()} />
