@@ -1,0 +1,6 @@
+{
+  "name": "Medicare+ Clinic",
+  "description": "Modern family healthcare clinic in Manikonda, Hyderabad by Dr. Mujtaba Siddiqui (General Practitioner). 4.9★ rating, trusted by 100+ families.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
